@@ -11,4 +11,6 @@ app.get('/', // our endpoint name
   res.send('Hello World') // our endpoint function response
 })
  
-app.listen(8000) // kick start the express server to work
+app.listen(process.env.PORT,()=>{
+  console.log(`listening to port: ${process.env.PORT}`);
+})
