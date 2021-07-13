@@ -5,6 +5,7 @@ const axios = require('axios');
 const mongoose=require('mongoose');
 // const jwt=require('jsonwebtoken');
 // const jwksClient=require('jwks-rsa');
+const articalModel= require('./models/db.model');
 app.use(cors()) 
 const handlerNews = require('./controller/user.controller')
 require('dotenv').config();
@@ -30,6 +31,14 @@ app.get('/',function (req, res) {res.send('Hello World')})
  app.post('/blogs',createArticalfunc);
  app.put('/blogs/:blog_id',updateBlog);
  app.delete('/blogs/:blog_id',deleteBlog);
+
+ //========================================================================
+
+ app.get('/allblogs',(req,res)=>
+ {articalModel.find({ },(error, user)=>
+ {if (error){res.send(error.message)}
+ res.send(user);  
+ });})
 
 // ============================================Varfication Autho==============================================//
 
