@@ -24,9 +24,10 @@ const seedUser=()=>{
         {nameartical :'War and Peace',description:'A legendary masterpiece, this book is synonymous with difficult reading, so why not challenge yourshelf',author:'philosophical book',title:'erou'}  ]
   
     })
+    
 
   osama.save();
-  console.log(osama);
+  console.log(osama.email);
   }
 
   module.exports=articalModel
