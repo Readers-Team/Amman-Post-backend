@@ -25,5 +25,6 @@
   "bugs": {
     "url": "https://github.com/Readers-Team/Amman-Post-backend/issues"
   },
-  "homepage": "https://github.com/Readers-Team/Amman-Post-backend#readme"
+  "homepage": "https://github.com/Readers-Team/Amman-Post-backend#readme",
+  "devDependencies": {}
 }
