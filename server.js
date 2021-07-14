@@ -18,7 +18,7 @@ app.use(cors());
 app.use(express.json());
 
 
-mongoose.connect('mongodb://localhost:27017/community',
+mongoose.connect('mongodb+srv://osama:osama1997@cluster0.7sra2.mongodb.net/myFirstDatabase?retryWrites=true&w=majority',
     { useNewUrlParser: true, useUnifiedTopology: true }
 );
 
